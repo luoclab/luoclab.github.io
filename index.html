@@ -1,22 +1,188 @@
-<p>Hello，大家好！👋</p>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>橘子 · Orange | 个人小站</title>
+  <meta name="description" content="这里是橘子的数字庭院：技术、思考与生活微光">
+  <link rel="icon" href="image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍊</text></svg>">
+  <style>
+    :root {
+      --orange-50: #fff7ed;
+      --orange-100: #ffedd5;
+      --orange-200: #fed7aa;
+      --orange-400: #fb923c;
+      --orange-600: #ea580c;
+      --orange-700: #c2410c;
+      --slate-50: #f8fafc;
+      --slate-100: #f1f5f9;
+      --slate-800: #1e293b;
+      --slate-900: #0f172a;
+      --white: #ffffff;
+      --shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.1);
+    }
 
-<p>我是 <strong>橘子>ju'z>ju>（aka <code>clabluo</code>），欢迎来到我的个人站点 🌐</p>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --orange-50: #431406;
+        --orange-100: #5e260d;
+        --orange-200: #8a3d16;
+        --orange-400: #f97316;
+        --orange-600: #ea580c;
+        --orange-700: #c2410c;
+        --slate-50: #0f172a;
+        --slate-100: #1e293b;
+        --slate-800: #e2e8f0;
+        --slate-900: #f1f5f9;
+        --white: #1e293b;
+        --shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.2);
+      }
+    }
 
-<p>很高兴你驻足于此～这里是我分享思考、记录成长与技术实践的一方小天地。  
-你可以在以下平台找到我，欢迎交流与指正 ✨</p>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', 'PingFang SC', 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, var(--orange-50), var(--slate-50) 80%);
+      color: var(--slate-800);
+      line-height: 1.65;
+      padding: 2.5rem 1.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: linear-gradient(135deg, var(--orange-50), var(--slate-50) 80%); }
+    }
 
-<ul>
-  <li>
-    <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> —— 当前主要写作阵地，聚焦 AI、工程实践与人文思考
-  </li>
-  <li>
-    <a href="http://hejie.nigeerhuo.com">旧博客（归档中）</a> —— 早期技术笔记存放地，现已迁至知乎持续更新
-  </li>
-</ul>
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .orange-icon {
+      font-size: 4.5rem;
+      margin: 0.5rem 0;
+      display: block;
+    }
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--orange-600), var(--orange-400));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin: 0.5rem 0;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      color: var(--slate-800);
+      opacity: 0.85;
+    }
 
-<!-- 可选补充（若适用） -->
-<!-- 
-<address>
-  📩 合作/提问欢迎邮件联系：<a href="mailto:your@email.com">your@email.com</a>
-</address>
--->
+    .card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-4px); }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--orange-600);
+      margin-bottom: 1.2rem;
+      font-weight: 700;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .link-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--slate-800);
+      background: var(--orange-100);
+      transition: all 0.3s;
+    }
+    .link-item:hover {
+      background: var(--orange-200);
+      transform: translateX(4px);
+    }
+    .link-icon {
+      font-size: 1.5rem;
+    }
+
+    .quote {
+      font-style: italic;
+      text-align: center;
+      font-size: 1.15rem;
+      margin: 2.5rem 0;
+      padding: 1.5rem;
+      background: var(--orange-100);
+      border-left: 4px solid var(--orange-400);
+      border-radius: 0 12px 12px 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: var(--slate-800);
+      opacity: 0.7;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2rem; }
+      .orange-icon { font-size: 3.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <span class="orange-icon">🍊</span>
+    <h1>橘子</h1>
+    <p class="tagline">技术探索者 · 思考者 · 生活的观察员</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2 class="section-title">🍊 关于我</h2>
+      <p>你好！我是<strong>橘子</strong>——一个喜欢在代码与文字间穿梭的人。</p>
+      <p>我相信：技术要有温度，思考要有根系，生活要有光。</p>
+      <p>这里是我的数字庭院，欢迎你驻足、留言，或一起种一棵思想的小树。</p>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">📍 在这里找到我</h2>
+      <div class="links">
+        <a href="https://www.zhihu.com/people/AJLoveChina" class="link-item" target="_blank" rel="noopener">
+          <span class="link-icon">🧠</span>
+          <span><strong>知乎</strong> —— 分享技术、人生与微小的顿悟</span>
+        </a>
+        <a href="http://hejie.nigeerhuo.com" class="link-item" target="_blank" rel="noopener">
+          <span class="link-icon">📦</span>
+          <span><strong>旧博客</strong> —— 归档中，新内容已迁往知乎</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="quote">
+      “像橘子一样——<br>
+      外有韧皮，内有清甜；<br>
+      不惧挤压，自有光芒。”
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 橘子 · 愿我们都能活得饱满而清醒 🌱</p>
+  </footer>
+</body>
+</html>
