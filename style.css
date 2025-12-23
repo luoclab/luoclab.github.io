@@ -1,0 +1,117 @@
+/* style.css —— 橘子的数字庭院 · 统一样式 */
+:root {
+  --orange-50: #fff7ed;
+  --orange-100: #ffedd5;
+  --orange-200: #fed7aa;
+  --orange-400: #fb923c;
+  --orange-600: #ea580c;
+  --orange-700: #c2410c;
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+  --white: #ffffff;
+  --shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --orange-50: #431406;
+    --orange-100: #5e260d;
+    --orange-200: #8a3d16;
+    --slate-50: #0f172a;
+    --slate-100: #1e293b;
+    --slate-800: #e2e8f0;
+    --slate-900: #f1f5f9;
+    --white: #1e293b;
+    --shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.2);
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', 'PingFang SC', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, var(--orange-50), var(--slate-50) 80%);
+  color: var(--slate-800);
+  line-height: 1.65;
+  padding: 2rem 1.2rem;
+  max-width: 820px;
+  margin: 0 auto;
+}
+a { color: var(--orange-600); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 导航栏 */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  padding: 1.2rem 0;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+.navbar a {
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.navbar a:hover,
+.navbar a.active {
+  background: var(--orange-100);
+  color: var(--orange-700);
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .navbar { gap: 1rem; }
+  .navbar a { font-size: 0.95rem; padding: 0.3rem 0.6rem; }
+}
+
+/* 内容容器 */
+.container {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 2.2rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+/* 标题 */
+.page-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--orange-600);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.page-title::before {
+  content: "🍊";
+}
+
+/* 卡片 */
+.card {
+  background: var(--orange-100);
+  border-radius: 14px;
+  padding: 1.4rem;
+  margin: 1.5rem 0;
+}
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--orange-700);
+  margin-bottom: 0.6rem;
+}
+.card p { margin-bottom: 0.6rem; }
+
+/* 页脚 */
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--orange-200);
+  color: var(--slate-800);
+  opacity: 0.7;
+  font-size: 0.95rem;
+}

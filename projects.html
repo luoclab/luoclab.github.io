@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>橘子 · 项目</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="./">首页</a>
+    <a href="./about.html">关于</a>
+    <a href="./projects.html" class="active">项目</a>
+    <a href="./thoughts.html">思考</a>
+    <a href="./contact.html">联系</a>
+  </nav>
+
+  <main class="container">
+    <h1 class="page-title">我的项目</h1>
+
+    <div class="card">
+      <h2 class="card-title">🧩 金山办公实习 · 文档结构理解</h2>
+      <p><strong>角色：</strong>算法实习生（2024）</p>
+      <p><strong>任务：</strong>从解析文档中自动提取标题与层级树结构</p>
+      <p><strong>技术：</strong>LLM 提示工程 + 后处理规则 + 批量推理优化</p>
+      <p><strong>成果：</strong>准确率提升 22%，支持 PDF/DOCX 多格式</p>
+    </div>
+
+    <div class="card">
+      <h2 class="card-title">🧪 LLM 微调实验（研究中）</h2>
+      <p><strong>目标：</strong>在消费级 GPU（如 RTX 4090）上高效微调 7B+ 模型</p>
+      <p><strong>方案：</strong>QLoRA + 梯度检查点 + 自定义数据加载器</p>
+      <p><strong>进展：</strong>已实现 Qwen2-7B 在 24G 显存下全参微调</p>
+    </div>
+
+    <div class="card">
+      <h2 class="card-title">✍️ 开源小工具</h2>
+      <p>• <a href="https://github.com/clabluo/text-splitter" target="_blank">text-splitter</a>：中文文本智能分块（适配 RAG）</p>
+      <p>• <a href="https://github.com/clabluo/diffusion-sampler" target="_blank">diffusion-sampler</a>：扩散模型采样策略对比实验</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 橘子 · 愿我们都能活得饱满而清醒 🌱</p>
+  </footer>
+</body>
+</html>
