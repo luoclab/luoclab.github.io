@@ -3,185 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>橘子 · Orange | 个人小站</title>
-  <meta name="description" content="这里是橘子的数字庭院：技术、思考与生活微光">
+  <title>橘子 · 首页</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍊</text></svg>">
-  <style>
-    :root {
-      --orange-50: #fff7ed;
-      --orange-100: #ffedd5;
-      --orange-200: #fed7aa;
-      --orange-400: #fb923c;
-      --orange-600: #ea580c;
-      --orange-700: #c2410c;
-      --slate-50: #f8fafc;
-      --slate-100: #f1f5f9;
-      --slate-800: #1e293b;
-      --slate-900: #0f172a;
-      --white: #ffffff;
-      --shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.1);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --orange-50: #431406;
-        --orange-100: #5e260d;
-        --orange-200: #8a3d16;
-        --orange-400: #f97316;
-        --orange-600: #ea580c;
-        --orange-700: #c2410c;
-        --slate-50: #0f172a;
-        --slate-100: #1e293b;
-        --slate-800: #e2e8f0;
-        --slate-900: #f1f5f9;
-        --white: #1e293b;
-        --shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.2);
-      }
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Segoe UI', 'PingFang SC', 'Helvetica Neue', sans-serif;
-      background: linear-gradient(135deg, var(--orange-50), var(--slate-50) 80%);
-      color: var(--slate-800);
-      line-height: 1.65;
-      padding: 2.5rem 1.5rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    @media (prefers-color-scheme: dark) {
-      body { background: linear-gradient(135deg, var(--orange-50), var(--slate-50) 80%); }
-    }
-
-    .header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-    .orange-icon {
-      font-size: 4.5rem;
-      margin: 0.5rem 0;
-      display: block;
-    }
-    h1 {
-      font-size: 2.8rem;
-      font-weight: 800;
-      background: linear-gradient(90deg, var(--orange-600), var(--orange-400));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      margin: 0.5rem 0;
-    }
-    .tagline {
-      font-size: 1.2rem;
-      color: var(--slate-800);
-      opacity: 0.85;
-    }
-
-    .card {
-      background: var(--white);
-      border-radius: 20px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: var(--shadow);
-      transition: transform 0.3s ease;
-    }
-    .card:hover { transform: translateY(-4px); }
-
-    .section-title {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      color: var(--orange-600);
-      margin-bottom: 1.2rem;
-      font-weight: 700;
-    }
-
-    .links {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-    .link-item {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding: 1rem;
-      border-radius: 12px;
-      text-decoration: none;
-      color: var(--slate-800);
-      background: var(--orange-100);
-      transition: all 0.3s;
-    }
-    .link-item:hover {
-      background: var(--orange-200);
-      transform: translateX(4px);
-    }
-    .link-icon {
-      font-size: 1.5rem;
-    }
-
-    .quote {
-      font-style: italic;
-      text-align: center;
-      font-size: 1.15rem;
-      margin: 2.5rem 0;
-      padding: 1.5rem;
-      background: var(--orange-100);
-      border-left: 4px solid var(--orange-400);
-      border-radius: 0 12px 12px 0;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      color: var(--slate-800);
-      opacity: 0.7;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 2.2rem; }
-      .orange-icon { font-size: 3.5rem; }
-    }
-  </style>
 </head>
 <body>
-  <header class="header">
-    <span class="orange-icon">🍊</span>
-    <h1>橘子</h1>
-    <p class="tagline">AI算法工程师 · 历史爱好者 · 在体验中成长</p>
-  </header>
+  <nav class="navbar">
+    <a href="./" class="active">首页</a>
+    <a href="./about.html">关于</a>
+    <a href="./projects.html">项目</a>
+    <a href="./thoughts.html">思考</a>
+    <a href="./contact.html">联系</a>
+  </nav>
 
-  <main>
-    <section class="card">
-      <h2 class="section-title">🍊 关于我</h2>
-      <p>你好！我是<strong>橘子</strong>——一个喜欢在代码与文字间穿梭的人。</p>
-      <p>我相信：技术要有温度，思考要有根系，生活要有光。</p>
-      <p>这里是我的数字庭院，欢迎你驻足、留言，或一起种一棵思想的小树。</p>
-    </section>
+  <main class="container">
+    <h1 class="page-title">欢迎来到我的庭院</h1>
+    
+    <p>你好！我是<strong>橘子</strong>——一个在人工智能与人文思考之间行走的探索者。</p>
+    
+    <div class="card">
+      <h2 class="card-title">🌱 这里有什么？</h2>
+      <p>• <a href="./about.html">关于我</a>：成长轨迹与信念</p>
+      <p>• <a href="./projects.html">项目实践</a>：金山实习、LLM 微调、多模态探索</p>
+      <p>• <a href="./thoughts.html">思考随笔</a>：知乎精选 + 个人感悟</p>
+      <p>• <a href="./contact.html">联系我</a>：欢迎交流与建议</p>
+    </div>
 
-    <section class="card">
-      <h2 class="section-title">📍 在这里找到我</h2>
-      <div class="links">
-        <a href="https://www.zhihu.com/people/AJLoveChina" class="link-item" target="_blank" rel="noopener">
-          <span class="link-icon">🧠</span>
-          <span><strong>知乎</strong> —— 分享技术、人生与微小的顿悟</span>
-        </a>
-        <a href="http://hejie.nigeerhuo.com" class="link-item" target="_blank" rel="noopener">
-          <span class="link-icon">📦</span>
-          <span><strong>旧博客</strong> —— 归档中，新内容已迁往知乎</span>
-        </a>
-      </div>
-    </section>
-
-    <div class="quote">
-      “像橘子一样——<br>
-      外有韧皮，内有清甜；<br>
-      不惧挤压，自有光芒。”
+    <div class="card" style="background: #e0f2fe; border-left: 4px solid #3b82f6;">
+      <h2 class="card-title">💡 一句心里话</h2>
+      <p>“技术是手段，人才是目的。愿我的代码，终能服务于真实的生活。”</p>
     </div>
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>© 2025 橘子 · 愿我们都能活得饱满而清醒 🌱</p>
   </footer>
 </body>
